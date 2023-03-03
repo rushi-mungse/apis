@@ -3,6 +3,7 @@ const app = express();
 const routers = require("./routers");
 const { PORT } = require("./config");
 
+app.use(express.static("public"));
 app.use(express.json());
 app.use(routers);
 
