@@ -4,7 +4,7 @@ const routers = require("./routers");
 const { PORT } = require("./config");
 
 app.use(express.json());
-app.use("/api", routers);
+app.use(routers);
 
 app.listen(PORT, () => {
   console.log(`Server lintening on port ${PORT}`);
